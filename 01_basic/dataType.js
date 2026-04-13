@@ -14,13 +14,38 @@ let  statement=false
 // data type
 /*
     1. number => highest stroge 2**53
-    2. Bigint
+    2. BigInt
     3. boolean=>true/false
     4. string=>""
     5. null=>standalone value
     6. undefined
-    7. symbols => unique
+    7. symbole => unique
     8. object 
 */
 console.log(typeof null) // output null is object data type 
 console.log(typeof undefined) // output undefined is undefined data type
+
+
+// some important points about  data type
+// premetive data type
+// there are seven premetive datatype
+// 1.string ,2.number, 3.Boolean,4.null,5.symbole,6.undefined,7.bigInt
+// refrence or (non-premitive) datatype
+// 1.array,2.object,3.funtion
+
+let blank ;//undefined datatype
+const num=12345667n //bigint data type
+console.log(typeof(num))
+const hero=["krish","spiderman","superman"]//array datatype typeof object
+const ObjectDatatype={
+    name:'ankit',
+    age:20,
+    sex:"male"
+}//oject data type 
+console.log(typeof (hero)) //object datatype
+const functionDatatype=function(){
+    console.log("hellow world")
+}
+console.log(typeof functionDatatype) //object function datatype
+
+
