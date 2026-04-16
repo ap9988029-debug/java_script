@@ -48,4 +48,23 @@ const functionDatatype=function(){
 }
 console.log(typeof functionDatatype) //object function datatype
 
+// stack memory store( primitive) heap memory store(non_primitive)
+// stack memory to copy of ist variable data
+// heap memory take refrence from ist variable data
+//  example of stack
+let userOne="ankitpandey@572007"
+let userTwo=userOne
+console.log(userTwo)
+userTwo="ankit@572007"
+console.log(userTwo)
+console.log(userOne)
+//  example of heap
+let student={
+    name:"ankit",
+    email:"ankitpandey@572007"
+}
+let student2=student
+student2.email="ankit@572007"//this update on student student two because its  store in heap memory
+console.log(student)
+
 
